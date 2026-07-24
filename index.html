@@ -1,287 +1,1043 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#3a2318">
-  <meta name="description" content="Breathe.Coffee, Jaipur — a premium pure vegetarian café serving global cuisine, handcrafted coffee and memorable dining experiences with live music.">
-  <meta name="keywords" content="Breathe Coffee Jaipur, pure vegetarian cafe Jaipur, global cuisine Jaipur, coffee shop Ridhi Raj World, live music cafe Jaipur">
-  <meta name="author" content="Breathe.Coffee">
-  <meta property="og:title" content="Breathe.Coffee | Sip. Savour. Breathe.">
-  <meta property="og:description" content="Premium vegetarian global cuisine and handcrafted coffee in Jaipur.">
-  <meta property="og:type" content="website">
-  <title>Breathe Coffee | Premium Vegetarian Café in Jaipur</title>
-  <link rel="icon" type="image/png" href="assets/images/favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "CafeOrCoffeeShop",
-    "name": "Breathe.Coffee",
-    "servesCuisine": "Global Cuisine",
-    "priceRange": "₹₹₹",
-    "telephone": "+91-99928060497",
-    "legalName": "Breathe Hospitality",
-    "taxID": "08ABGFB8131J1ZC",
-    "address": {"@type":"PostalAddress","streetAddress":"Second Floor, Ridhiraj World Business Center, Queens Road, Dharam Park","addressLocality":"Jaipur","addressRegion":"Rajasthan","postalCode":"302021","addressCountry":"IN"},
-    "openingHours": "Mo-Su 08:00-12:00",
-    "acceptsReservations": "True",
-    "menu": "#menu",
-    "hasMenu": {"@type":"Menu","name":"Breathe.Coffee Menu"},
-    "paymentAccepted": "Cash, Credit Card, Debit Card"
-  }
-  </script>
-</head>
-<body>
-  <div class="preloader" id="preloader" aria-hidden="true">
-    <div class="cup-loader"><i class="fa-solid fa-mug-hot"></i></div>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
 
-  <header class="header" id="header">
-    <div class="container nav-wrap">
-      <a href="#home" class="logo logo-image-link" aria-label="Breathe Coffee home">
-        <img class="brand-logo" src="assets/images/breathe-coffee-logo.png" alt="Breathe Coffee">
-      </a>
-      <nav class="nav-menu" id="navMenu" aria-label="Primary navigation">
-        <button class="menu-close" id="menuClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
-        <a href="#home" class="nav-link active">Home</a>
-        <a href="#about" class="nav-link">About Us</a>
-        <a href="#menu" class="nav-link">Menu</a>
-        <a href="#faq" class="nav-link">FAQ</a>
-        <a href="#gallery" class="nav-link">Gallery</a>
-        <a href="#contact" class="nav-link">Contact Us</a>
-      </nav>
-      <div class="nav-actions">
-        <a class="btn btn-primary call-now" data-phone-link href="#" aria-label="Call Breathe Coffee"><i class="fa-solid fa-phone"></i><span>Call Now</span></a>
-        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
-      </div>
-      
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO -->
+    <title>
+      Breathe.Coffee Jaipur | Premium Vegetarian Café & Global Cuisine
+    </title>
+
+    <meta
+      name="description"
+      content="Visit Breathe.Coffee in Jaipur for handcrafted coffee, premium pure vegetarian global cuisine, delicious desserts and memorable dining experiences with live music. Located at Ridhiraj World Business Center, Queens Road, Jaipur."
+    />
+
+    <meta
+      name="keywords"
+      content="Breathe Coffee Jaipur, Breathe Cafe Jaipur, vegetarian cafe in Jaipur, pure vegetarian restaurant Jaipur, premium cafe Jaipur, coffee shop Jaipur, global cuisine Jaipur, live music cafe Jaipur, cafe near Queens Road Jaipur, cafe near Ridhiraj World Business Center, best coffee in Jaipur, handcrafted coffee Jaipur, family cafe Jaipur"
+    />
+
+    <meta name="author" content="Breathe.Coffee" />
+    <meta name="publisher" content="Breathe Hospitality" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#3a2318" />
+    <meta name="format-detection" content="telephone=yes" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://breathecoffee.vercel.app//" />
+
+    <!-- Language and Location -->
+    <meta http-equiv="content-language" content="en-IN" />
+    <meta name="geo.region" content="IN-RJ" />
+    <meta name="geo.placename" content="Jaipur" />
+    <meta name="geo.position" content="26.9124;75.7873" />
+    <meta name="ICBM" content="26.9124, 75.7873" />
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:type" content="restaurant" />
+    <meta property="og:site_name" content="Breathe.Coffee" />
+
+    <meta
+      property="og:title"
+      content="Breathe.Coffee Jaipur | Sip. Savour. Breathe."
+    />
+
+    <meta
+      property="og:description"
+      content="Experience handcrafted coffee, premium pure vegetarian global cuisine, delicious desserts and live music at Breathe.Coffee in Jaipur."
+    />
+
+    <meta property="og:url" content="https://breathecoffee.vercel.app//" />
+    <meta
+      property="og:image"
+      content="https://breathecoffee.vercel.app//assets/images/breathe-coffee-og-image.jpg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://breathecoffee.vercel.app//assets/images/breathe-coffee-og-image.jpg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta
+      property="og:image:alt"
+      content="Breathe.Coffee – Premium vegetarian café and coffee shop in Jaipur"
+    />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta
+      name="twitter:title"
+      content="Breathe.Coffee Jaipur | Premium Vegetarian Café"
+    />
+
+    <meta
+      name="twitter:description"
+      content="Enjoy handcrafted coffee, pure vegetarian global cuisine, desserts and live music at Breathe.Coffee, Jaipur."
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://breathecoffee.vercel.app//assets/images/breathe-coffee-og-image.jpg"
+    />
+
+    <meta
+      name="twitter:image:alt"
+      content="Breathe.Coffee – Premium café in Jaipur"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/favicon.png"
+    />
+
+    <!-- Performance: Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- Website CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- Local Business Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["CafeOrCoffeeShop", "Restaurant"],
+        "@id": "https://breathecoffee.vercel.app//#cafe",
+        "name": "Breathe.Coffee",
+        "legalName": "Breathe Hospitality",
+        "url": "https://breathecoffee.vercel.app//",
+        "logo": "https://breathecoffee.vercel.app//assets/images/logo.png",
+        "image": [
+          "https://breathecoffee.vercel.app//assets/images/breathe-coffee-og-image.jpg"
+        ],
+        "description": "Breathe.Coffee is a premium pure vegetarian café in Jaipur offering handcrafted coffee, global cuisine, delicious desserts and memorable dining experiences with live music.",
+        "telephone": "+91-99928060497",
+        "taxID": "08ABGFB8131J1ZC",
+        "priceRange": "₹₹₹",
+        "servesCuisine": [
+          "Pure Vegetarian",
+          "Global Cuisine",
+          "Coffee",
+          "Desserts"
+        ],
+        "acceptsReservations": true,
+        "paymentAccepted": ["Cash", "Credit Card", "Debit Card", "UPI"],
+        "currenciesAccepted": "INR",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Second Floor, Ridhiraj World Business Center, Queens Road, Dharam Park",
+          "addressLocality": "Jaipur",
+          "addressRegion": "Rajasthan",
+          "postalCode": "302021",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 26.9124,
+          "longitude": 75.7873
+        },
+        "hasMap": "https://maps.app.goo.gl/tWQ8FmKck2Jwc3Kx",
+        "menu": "https://breathecoffee.vercel.app//#menu",
+        "hasMenu": {
+          "@type": "Menu",
+          "name": "Breathe.Coffee Menu",
+          "url": "https://breathecoffee.vercel.app//#menu"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "08:00",
+            "closes": "23:59"
+          }
+        ],
+        "areaServed": {
+          "@type": "City",
+          "name": "Jaipur"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="preloader" id="preloader" aria-hidden="true">
+      <div class="cup-loader"><i class="fa-solid fa-mug-hot"></i></div>
     </div>
-  </header>
-  <div class="menu-overlay" id="menuOverlay"></div>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-bg"></div>
-      <div class="hero-glow glow-one"></div>
-      <div class="hero-glow glow-two"></div>
-      <div class="container hero-content">
-        <div class="hero-copy reveal">
-          <span class="eyebrow light"><i class="fa-solid fa-seedling"></i> Pure Vegetarian • Global Cuisine</span>
-          <h1>Slow down.<br><em>Sip the moment.</em></h1>
-          <p>A warm, design-led café where handcrafted coffee, world-inspired vegetarian food and soulful conversations come together.</p>
-          <div class="hero-buttons">
-            <a href="#menu" class="btn btn-cream">Explore Our Menu <i class="fa-solid fa-arrow-right"></i></a>
-            <a href="#contact" class="btn btn-outline-light">Book a Table</a>
+    <header class="header" id="header">
+      <div class="container nav-wrap">
+        <a
+          href="#home"
+          class="logo logo-image-link"
+          aria-label="Breathe Coffee home"
+        >
+          <img
+            class="brand-logo"
+            src="assets/images/breathe-coffee-logo.png"
+            alt="Breathe Coffee"
+          />
+        </a>
+        <nav class="nav-menu" id="navMenu" aria-label="Primary navigation">
+          <button class="menu-close" id="menuClose" aria-label="Close menu">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About Us</a>
+          <a href="#menu" class="nav-link">Menu</a>
+          <a href="#faq" class="nav-link">FAQ</a>
+          <a href="#gallery" class="nav-link">Gallery</a>
+          <a href="#contact" class="nav-link">Contact Us</a>
+        </nav>
+        <div class="nav-actions">
+          <a
+            class="btn btn-primary call-now"
+            data-phone-link
+            href="#"
+            aria-label="Call Breathe Coffee"
+            ><i class="fa-solid fa-phone"></i><span>Call Now</span></a
+          >
+          <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-glow glow-one"></div>
+        <div class="hero-glow glow-two"></div>
+        <div class="container hero-content">
+          <div class="hero-copy reveal">
+            <span class="eyebrow light"
+              ><i class="fa-solid fa-seedling"></i> Pure Vegetarian • Global
+              Cuisine</span
+            >
+            <h1>Slow down.<br /><em>Sip the moment.</em></h1>
+            <p>
+              A warm, design-led café where handcrafted coffee, world-inspired
+              vegetarian food and soulful conversations come together.
+            </p>
+            <div class="hero-buttons">
+              <a href="#menu" class="btn btn-cream"
+                >Explore Our Menu <i class="fa-solid fa-arrow-right"></i
+              ></a>
+              <a href="#contact" class="btn btn-outline-light">Book a Table</a>
+            </div>
+            <div class="hero-meta">
+              <div>
+                <strong>4.6 <i class="fa-solid fa-star"></i></strong
+                ><span>Guest Rating</span>
+              </div>
+              <div><strong>100%</strong><span>Pure Vegetarian</span></div>
+              <div><strong>₹1800</strong><span>For Two (Approx.)</span></div>
+            </div>
           </div>
-          <div class="hero-meta">
-            <div><strong>4.6 <i class="fa-solid fa-star"></i></strong><span>Guest Rating</span></div>
-            <div><strong>100%</strong><span>Pure Vegetarian</span></div>
-            <div><strong>₹1800</strong><span>For Two (Approx.)</span></div>
+          <div class="hero-visual reveal delay-1">
+            <div class="hero-image-frame">
+              <img
+                src="assets/images/banner-image-.jpeg"
+                alt="Breathe Coffee Jaipur warm and elegant interior"
+              />
+              <div class="open-card">
+                <span class="pulse"></span>
+                <div>
+                  <small>Open Daily</small><strong>8:00 AM onwards</strong>
+                </div>
+              </div>
+            </div>
+            <div class="floating-bean bean-one">
+              <i class="fa-solid fa-mug-hot"></i>
+            </div>
+            <div class="floating-bean bean-two">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
           </div>
         </div>
-        <div class="hero-visual reveal delay-1">
-          <div class="hero-image-frame">
-            <img src="assets/images/banner-image-.jpeg" alt="Breathe Coffee Jaipur warm and elegant interior">
-            <div class="open-card"><span class="pulse"></span><div><small>Open Daily</small><strong>8:00 AM onwards</strong></div></div>
+        <a href="#about" class="scroll-cue" aria-label="Scroll to about"
+          ><span></span>Discover</a
+        >
+      </section>
+
+      <section class="about section" id="about">
+        <div class="container about-grid">
+          <div class="about-images reveal">
+            <div class="image-main">
+              <img
+                src="assets/images/breathe-interior-green.png"
+                alt="Green indoor seating at Breathe Coffee Jaipur"
+              />
+            </div>
+            <div class="image-small">
+              <img
+                src="assets/images/breathe-interior-corner.png"
+                alt="Beautiful plant-filled corner at Breathe Coffee"
+              />
+            </div>
+            <div class="experience-badge">
+              <strong>Global</strong><span>Flavours,<br />local warmth</span>
+            </div>
           </div>
-          <div class="floating-bean bean-one"><i class="fa-solid fa-mug-hot"></i></div>
-          <div class="floating-bean bean-two"><i class="fa-solid fa-leaf"></i></div>
-        </div>
-      </div>
-      <a href="#about" class="scroll-cue" aria-label="Scroll to about"><span></span>Discover</a>
-    </section>
-
-    <section class="about section" id="about">
-      <div class="container about-grid">
-        <div class="about-images reveal">
-          <div class="image-main"><img src="assets/images/breathe-interior-green.png" alt="Green indoor seating at Breathe Coffee Jaipur"></div>
-          <div class="image-small"><img src="assets/images/breathe-interior-corner.png" alt="Beautiful plant-filled corner at Breathe Coffee"></div>
-          <div class="experience-badge"><strong>Global</strong><span>Flavours,<br>local warmth</span></div>
-        </div>
-        <div class="about-copy reveal delay-1">
-          <span class="eyebrow">Breathe Coffee - A Unit Of BREATHE HOSPITALITY</span>
-          <h2>More than coffee,<br><em>it’s a feeling.</em></h2>
-          <p class="lead">Breathe.Coffee is a calm pause in the heart of Jaipur—created for unhurried mornings, meaningful meetings and evenings filled with music.</p>
-          <p>Our kitchen celebrates pure vegetarian global cuisine, thoughtfully prepared with fresh ingredients. From rich coffee and comforting breakfasts to flavourful mains and desserts, every detail is designed to make you stay a little longer.</p>
-          <div class="feature-list">
-            <div><span><i class="fa-solid fa-leaf"></i></span><div><strong>Pure Vegetarian</strong><small>Fresh food crafted with care</small></div></div>
-            <div><span><i class="fa-solid fa-music"></i></span><div><strong>Live Music</strong><small>Soulful ambience and good vibes</small></div></div>
-            <div><span><i class="fa-solid fa-square-parking"></i></span><div><strong>Easy Parking</strong><small>Comfort from arrival to dessert</small></div></div>
-            <div><span><i class="fa-solid fa-credit-card"></i></span><div><strong>Card Payments</strong><small>Convenient cashless payments</small></div></div>
+          <div class="about-copy reveal delay-1">
+            <span class="eyebrow"
+              >Breathe Coffee - A Unit Of BREATHE HOSPITALITY</span
+            >
+            <h2>More than coffee,<br /><em>it’s a feeling.</em></h2>
+            <p class="lead">
+              Breathe.Coffee is a calm pause in the heart of Jaipur—created for
+              unhurried mornings, meaningful meetings and evenings filled with
+              music.
+            </p>
+            <p>
+              Our kitchen celebrates pure vegetarian global cuisine,
+              thoughtfully prepared with fresh ingredients. From rich coffee and
+              comforting breakfasts to flavourful mains and desserts, every
+              detail is designed to make you stay a little longer.
+            </p>
+            <div class="feature-list">
+              <div>
+                <span><i class="fa-solid fa-leaf"></i></span>
+                <div>
+                  <strong>Pure Vegetarian</strong
+                  ><small>Fresh food crafted with care</small>
+                </div>
+              </div>
+              <div>
+                <span><i class="fa-solid fa-music"></i></span>
+                <div>
+                  <strong>Live Music</strong
+                  ><small>Soulful ambience and good vibes</small>
+                </div>
+              </div>
+              <div>
+                <span><i class="fa-solid fa-square-parking"></i></span>
+                <div>
+                  <strong>Easy Parking</strong
+                  ><small>Comfort from arrival to dessert</small>
+                </div>
+              </div>
+              <div>
+                <span><i class="fa-solid fa-credit-card"></i></span>
+                <div>
+                  <strong>Card Payments</strong
+                  ><small>Convenient cashless payments</small>
+                </div>
+              </div>
+            </div>
+            <a href="#contact" class="text-link"
+              >Plan your visit <i class="fa-solid fa-arrow-right-long"></i
+            ></a>
           </div>
-          <a href="#contact" class="text-link">Plan your visit <i class="fa-solid fa-arrow-right-long"></i></a>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="menu-section section" id="menu">
-      <div class="container">
-        <div class="section-heading center reveal">
-          <span class="eyebrow">A Taste For Every Mood</span>
-          <h2>Explore our <em>favourites</em></h2>
-          <p>Four delicious chapters, one memorable dining experience.</p>
-        </div>
-        <div class="menu-grid">
-          <article class="menu-card reveal">
-            <div class="menu-image"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=85" alt="Hot artisan coffee"><span class="menu-number">01</span></div>
-            <div class="menu-info"><span>Signature Sips</span><h3>Coffee & Beverages</h3><p>Espresso classics, cold brews, teas and refreshing handcrafted pours.</p><a href="#contact">Ask for menu <i class="fa-solid fa-arrow-right"></i></a></div>
-          </article>
-          <article class="menu-card reveal delay-1">
-            <div class="menu-image"><img src="assets/images/vegetarian-breakfast.jpeg" alt="Vegetarian breakfast"><span class="menu-number">02</span></div>
-            <div class="menu-info"><span>Bright Mornings</span><h3>Breakfast & Brunch</h3><p>Wholesome breakfast plates, artisanal toasts and all-day favourites.</p><a href="#contact">Ask for menu <i class="fa-solid fa-arrow-right"></i></a></div>
-          </article>
-          <article class="menu-card reveal delay-2">
-            <div class="menu-image"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=85" alt="Fresh vegetarian global cuisine"><span class="menu-number">03</span></div>
-            <div class="menu-info"><span>World On A Plate</span><h3>Global Cuisine</h3><p>Pure-veg pizzas, pastas, Asian bowls and inspired comfort food.</p><a href="#contact">Ask for menu <i class="fa-solid fa-arrow-right"></i></a></div>
-          </article>
-          <article class="menu-card reveal delay-3">
-            <div class="menu-image"><img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=85" alt="Delicious dessert"><span class="menu-number">04</span></div>
-            <div class="menu-info"><span>Sweet Endings</span><h3>Desserts & Bakes</h3><p>Indulgent cakes, delicate pastries and treats made for sharing.</p><a href="#contact">Ask for menu <i class="fa-solid fa-arrow-right"></i></a></div>
-          </article>
-        </div>
-        <div class="menu-note reveal"><i class="fa-solid fa-circle-info"></i> Menu items and availability may change. Contact us for today’s complete menu.</div>
-      </div>
-    </section>
-
-    <section class="experience-banner">
-      <div class="container experience-inner reveal">
-        <div><span class="eyebrow light">Your table is waiting</span><h2>Good food. Great coffee.<br><em>Beautiful memories.</em></h2></div>
-        <a href="#contact" class="btn btn-cream">Reserve Your Table <i class="fa-solid fa-calendar-check"></i></a>
-      </div>
-    </section>
-
-    <section class="faq-section section" id="faq">
-      <div class="container faq-grid">
-        <div class="faq-intro reveal">
-          <span class="eyebrow">Everything You Need To Know</span>
-          <h2>Frequently asked <em>questions</em></h2>
-          <p>Planning your visit? Here are quick answers about food, timings, facilities and reservations.</p>
-          <div class="faq-help"><i class="fa-solid fa-comments"></i><div><small>Still have a question?</small><a data-whatsapp-link href="#">Chat with us on WhatsApp</a></div></div>
-        </div>
-        <div class="accordion reveal delay-1">
-          <div class="faq-item active"><button class="faq-question"><span>What cuisine does Breathe.Coffee serve?</span><i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>Breathe.Coffee serves thoughtfully curated Global Cuisine with a variety of comforting and contemporary dishes.</p></div></div>
-          <div class="faq-item"><button class="faq-question"><span>Is Breathe.Coffee pure vegetarian?</span><i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>Yes, Breathe.Coffee is a pure vegetarian restaurant.</p></div></div>
-          <div class="faq-item"><button class="faq-question"><span>What is the approximate cost for two?</span><i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>The approximate dining cost for two guests is ₹1,800. Final pricing depends on the items ordered.</p></div></div>
-          <div class="faq-item"><button class="faq-question"><span>What are the operational timings?</span><i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>Breathe.Coffee is open Monday to Sunday from 8:00 AM to 12:00 PM.</p></div></div>
-          <div class="faq-item"><button class="faq-question"><span>Does the restaurant serve buffet or alcohol?</span><i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>No, Breathe.Coffee does not serve buffet or alcohol.</p></div></div>
-          <div class="faq-item"><button class="faq-question"><span>Is parking available?</span><i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>Yes, parking facilities are available for guests at Breathe.Coffee.</p></div></div>
-          <div class="faq-item"><button class="faq-question"><span>Are card payments accepted?</span><i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>Yes, debit and credit card payments are accepted. Payment-partner offers may depend on current availability and terms.</p></div></div>
-          <div class="faq-item"><button class="faq-question"><span>Is live music available?</span><i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>Yes, Breathe.Coffee hosts live music. Contact the restaurant to confirm the current performance schedule.</p></div></div>
-          <div class="faq-item"><button class="faq-question"><span>Can I book a table?</span><i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>Yes. Use the enquiry form below or contact us by phone/WhatsApp to request a table reservation.</p></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="gallery-section section" id="gallery">
-      <div class="container">
-        <div class="section-heading split reveal"><div><span class="eyebrow">A Glimpse Inside</span><h2>Calm corners & <em>warm light</em></h2></div><p>Designed for conversations, celebrations and quiet cups of coffee.</p></div>
-        <div class="gallery-grid">
-          <button class="gallery-item tall reveal" data-full="assets/images/breathe-interior-main.png"><img src="assets/images/breathe-interior-main.png" alt="Main seating area at Breathe Coffee Jaipur"><span><i class="fa-solid fa-expand"></i></span></button>
-          <button class="gallery-item reveal delay-1" data-full="assets/images/breathe-interior-corner.png"><img src="assets/images/breathe-interior-corner.png" alt="Plant-filled cafe corner"><span><i class="fa-solid fa-expand"></i></span></button>
-          <button class="gallery-item reveal delay-2" data-full="assets/images/breathe-interior-green.png"><img src="assets/images/breathe-interior-green.png" alt="Calm green seating corner"><span><i class="fa-solid fa-expand"></i></span></button>
-          <button class="gallery-item reveal delay-1" data-full="assets/images/fermented-coffee-beverage-brew-1366x768.webp"><img src="assets/images/fermented-coffee-beverage-brew-1366x768.webp" alt="Warm cafe table"><span><i class="fa-solid fa-expand"></i></span></button>
-          <button class="gallery-item reveal delay-2" data-full="assets/images/Hero-mobile-80percent-1534x1227.a16103c4.jpg"><img src="assets/images/Hero-mobile-80percent-1534x1227.a16103c4.jpg" alt="Bright coffee shop interior"><span><i class="fa-solid fa-expand"></i></span></button>
-        </div>
-      </div>
-    </section>
-
-    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Gallery image preview"><button id="lightboxClose" aria-label="Close gallery"><i class="fa-solid fa-xmark"></i></button><img id="lightboxImage" src="" alt="Expanded gallery view"></div>
-
-    <section class="testimonial-section section" id="testimonials">
-      <div class="container">
-        <div class="section-heading center reveal"><span class="eyebrow">Guest Stories</span><h2>Loved by our <em>community</em></h2><div class="rating-pill"><strong>4.6</strong><span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span><small>Based on guest ratings</small></div></div>
-        <div class="testimonial-slider reveal">
-          <div class="testimonial-track" id="testimonialTrack">
-            <article class="testimonial-card"><div class="review-stars">★★★★<span>★</span> <small>4/5</small></div><i class="fa-solid fa-quote-left"></i><p>“Amazing experience! The ambience is super calm and cozy, the coffee tasted fresh and rich, and the staff was polite and friendly. Loved the vibe and music.”</p><div class="guest"><span>R</span><div><strong>Rahul Choudhary</strong><small>Google Review</small></div></div></article>
-            <article class="testimonial-card"><div class="review-stars">★★★★★ <small>5/5</small></div><i class="fa-solid fa-quote-left"></i><p>“The vibe and ambience are aesthetically done. The atmosphere felt refreshing, the staff was polite and professional, and the food was genuinely good.”</p><div class="guest"><span>N</span><div><strong>Nandini Jaiswal</strong><small>Google Review</small></div></div></article>
-            <article class="testimonial-card"><div class="review-stars">★★★★★ <small>5/5</small></div><i class="fa-solid fa-quote-left"></i><p>“I really enjoyed the food—especially the granola smoothie bowl and coffee cranberry tonic. I would love to spend every evening here.”</p><div class="guest"><span>B</span><div><strong>BK Pahadi</strong><small>Google Review</small></div></div></article>
-            <article class="testimonial-card"><div class="review-stars">★★★★★ <small>5/5</small></div><i class="fa-solid fa-quote-left"></i><p>“Beautiful ambience. We tried a couple of beverages and everything was very decent.”</p><div class="guest"><span>K</span><div><strong>Kajal Sharma</strong><small>Google Review</small></div></div></article>
-            <article class="testimonial-card"><div class="review-stars">★★★★★ <small>5/5</small></div><i class="fa-solid fa-quote-left"></i><p>“A good, beautiful place for a family outing.”</p><div class="guest"><span>S</span><div><strong>Sangeeta Negi</strong><small>Google Review</small></div></div></article>
-            <article class="testimonial-card"><div class="review-stars low">★☆☆☆☆ <small>1/5</small></div><i class="fa-solid fa-quote-left"></i><p>“Nice ambience and good coffee.”</p><div class="guest"><span>D</span><div><strong>Divakar</strong><small>Google Review</small></div></div></article>
-            <article class="testimonial-card"><div class="review-stars">★★★★<span>★</span> <small>4/5</small></div><i class="fa-solid fa-quote-left"></i><p>“Amazing experience! The ambience is super calm and cozy, the coffee tasted fresh and rich, and the staff was polite and friendly. Loved the vibe and music.”</p><div class="guest"><span>R</span><div><strong>Rahul Choudhary</strong><small>Google Review</small></div></div></article>
-            <article class="testimonial-card"><div class="review-stars">★★★★★ <small>5/5</small></div><i class="fa-solid fa-quote-left"></i><p>“The vibe and ambience are aesthetically done. The atmosphere felt refreshing, the staff was polite and professional, and the food was genuinely good.”</p><div class="guest"><span>N</span><div><strong>Nandini Jaiswal</strong><small>Google Review</small></div></div></article>
+      <section class="menu-section section" id="menu">
+        <div class="container">
+          <div class="section-heading center reveal">
+            <span class="eyebrow">A Taste For Every Mood</span>
+            <h2>Explore our <em>favourites</em></h2>
+            <p>Four delicious chapters, one memorable dining experience.</p>
           </div>
-          <div class="slider-controls"><button id="prevTestimonial" aria-label="Previous review"><i class="fa-solid fa-arrow-left"></i></button><div class="slider-dots" id="sliderDots"></div><button id="nextTestimonial" aria-label="Next review"><i class="fa-solid fa-arrow-right"></i></button></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-section section" id="contact">
-      <div class="container contact-grid">
-        <div class="contact-details reveal">
-          <span class="eyebrow light">Visit Breathe.Coffee</span>
-          <h2>Let’s meet over<br><em>a perfect cup.</em></h2>
-          <p>Reserve a table, plan a celebration or simply ask us what’s brewing today.</p>
-          <div class="contact-list">
-            <a data-map-link href="#" target="_blank" rel="noopener"><span><i class="fa-solid fa-location-dot"></i></span><div><small>Find Us</small><strong>Breathe Coffee Jaipur, Second Floor, Ridhiraj World Business Center, Queens Road, Dharam Park, Jaipur, Rajasthan 302021</strong></div></a>
-            <a data-phone-link href="#"><span><i class="fa-solid fa-phone"></i></span><div><small>Call Us</small><strong data-phone-text>Phone number to be updated</strong></div></a>
-            <a data-email-link href="#"><span><i class="fa-solid fa-envelope"></i></span><div><small>Email Us</small><strong data-email-text>Email to be updated</strong></div></a>
-            <div><span><i class="fa-solid fa-clock"></i></span><div><small>Opening Hours</small><strong>Monday – Sunday: 8:00 AM – 12:00 PM</strong></div></div>
+          <div class="menu-grid">
+            <article class="menu-card reveal">
+              <div class="menu-image">
+                <img
+                  src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=85"
+                  alt="Hot artisan coffee"
+                /><span class="menu-number">01</span>
+              </div>
+              <div class="menu-info">
+                <span>Signature Sips</span>
+                <h3>Coffee & Beverages</h3>
+                <p>
+                  Espresso classics, cold brews, teas and refreshing handcrafted
+                  pours.
+                </p>
+                <a href="#contact"
+                  >Ask for menu <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </article>
+            <article class="menu-card reveal delay-1">
+              <div class="menu-image">
+                <img
+                  src="assets/images/vegetarian-breakfast.jpeg"
+                  alt="Vegetarian breakfast"
+                /><span class="menu-number">02</span>
+              </div>
+              <div class="menu-info">
+                <span>Bright Mornings</span>
+                <h3>Breakfast & Brunch</h3>
+                <p>
+                  Wholesome breakfast plates, artisanal toasts and all-day
+                  favourites.
+                </p>
+                <a href="#contact"
+                  >Ask for menu <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </article>
+            <article class="menu-card reveal delay-2">
+              <div class="menu-image">
+                <img
+                  src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=85"
+                  alt="Fresh vegetarian global cuisine"
+                /><span class="menu-number">03</span>
+              </div>
+              <div class="menu-info">
+                <span>World On A Plate</span>
+                <h3>Global Cuisine</h3>
+                <p>
+                  Pure-veg pizzas, pastas, Asian bowls and inspired comfort
+                  food.
+                </p>
+                <a href="#contact"
+                  >Ask for menu <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </article>
+            <article class="menu-card reveal delay-3">
+              <div class="menu-image">
+                <img
+                  src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=85"
+                  alt="Delicious dessert"
+                /><span class="menu-number">04</span>
+              </div>
+              <div class="menu-info">
+                <span>Sweet Endings</span>
+                <h3>Desserts & Bakes</h3>
+                <p>
+                  Indulgent cakes, delicate pastries and treats made for
+                  sharing.
+                </p>
+                <a href="#contact"
+                  >Ask for menu <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </article>
           </div>
-          <div class="socials"><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></div>
+          <div class="menu-note reveal">
+            <i class="fa-solid fa-circle-info"></i> Menu items and availability
+            may change. Contact us for today’s complete menu.
+          </div>
         </div>
-        <div class="contact-form-wrap reveal delay-1">
-          <span class="form-label">Table Enquiry</span>
-          <h3>Reserve your experience</h3>
-          <form id="whatsappForm">
-            <div class="form-row"><div class="form-group"><label for="name">Your Name *</label><input id="name" name="name" type="text" placeholder="Enter your name" required></div><div class="form-group"><label for="phone">Phone Number *</label><input id="phone" name="phone" type="tel" inputmode="tel" placeholder="+91 98765 43210" required></div></div>
-            <div class="form-row"><div class="form-group"><label for="date">Visit Date *</label><input id="date" name="date" type="date" required></div><div class="form-group"><label for="time">Preferred Time *</label><input id="time" name="time" type="time" required></div></div>
-            <div class="form-row"><div class="form-group"><label for="guests">Number of Guests *</label><select id="guests" name="guests" required><option value="">Select guests</option><option>1 Guest</option><option>2 Guests</option><option>3 Guests</option><option>4 Guests</option><option>5 Guests</option><option>6+ Guests</option></select></div><div class="form-group"><label for="occasion">Occasion</label><select id="occasion" name="occasion"><option>Casual Dining</option><option>Birthday</option><option>Anniversary</option><option>Business Meeting</option><option>Other</option></select></div></div>
-            <div class="form-group"><label for="message">Special Request</label><textarea id="message" name="message" rows="3" placeholder="Any special request or message..."></textarea></div>
-            <button type="submit" class="btn btn-primary btn-full"><i class="fa-brands fa-whatsapp"></i> Send Enquiry on WhatsApp</button>
-            <p class="form-note"><i class="fa-solid fa-lock"></i> Your details are used only for this booking enquiry.</p>
-          </form>
+      </section>
+
+      <section class="experience-banner">
+        <div class="container experience-inner reveal">
+          <div>
+            <span class="eyebrow light">Your table is waiting</span>
+            <h2>Good food. Great coffee.<br /><em>Beautiful memories.</em></h2>
+          </div>
+          <a href="#contact" class="btn btn-cream"
+            >Reserve Your Table <i class="fa-solid fa-calendar-check"></i
+          ></a>
+        </div>
+      </section>
+
+      <section class="faq-section section" id="faq">
+        <div class="container faq-grid">
+          <div class="faq-intro reveal">
+            <span class="eyebrow">Everything You Need To Know</span>
+            <h2>Frequently asked <em>questions</em></h2>
+            <p>
+              Planning your visit? Here are quick answers about food, timings,
+              facilities and reservations.
+            </p>
+            <div class="faq-help">
+              <i class="fa-solid fa-comments"></i>
+              <div>
+                <small>Still have a question?</small
+                ><a data-whatsapp-link href="#">Chat with us on WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="accordion reveal delay-1">
+            <div class="faq-item active">
+              <button class="faq-question">
+                <span>What cuisine does Breathe.Coffee serve?</span
+                ><i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Breathe.Coffee serves thoughtfully curated Global Cuisine with
+                  a variety of comforting and contemporary dishes.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>Is Breathe.Coffee pure vegetarian?</span
+                ><i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>Yes, Breathe.Coffee is a pure vegetarian restaurant.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>What is the approximate cost for two?</span
+                ><i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  The approximate dining cost for two guests is ₹1,800. Final
+                  pricing depends on the items ordered.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>What are the operational timings?</span
+                ><i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Breathe.Coffee is open Monday to Sunday from 8:00 AM to 12:00
+                  PM.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>Does the restaurant serve buffet or alcohol?</span
+                ><i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>No, Breathe.Coffee does not serve buffet or alcohol.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>Is parking available?</span
+                ><i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes, parking facilities are available for guests at
+                  Breathe.Coffee.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>Are card payments accepted?</span
+                ><i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes, debit and credit card payments are accepted.
+                  Payment-partner offers may depend on current availability and
+                  terms.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>Is live music available?</span
+                ><i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes, Breathe.Coffee hosts live music. Contact the restaurant
+                  to confirm the current performance schedule.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>Can I book a table?</span><i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes. Use the enquiry form below or contact us by
+                  phone/WhatsApp to request a table reservation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-section section" id="gallery">
+        <div class="container">
+          <div class="section-heading split reveal">
+            <div>
+              <span class="eyebrow">A Glimpse Inside</span>
+              <h2>Calm corners & <em>warm light</em></h2>
+            </div>
+            <p>
+              Designed for conversations, celebrations and quiet cups of coffee.
+            </p>
+          </div>
+          <div class="gallery-grid">
+            <button
+              class="gallery-item tall reveal"
+              data-full="assets/images/breathe-interior-main.png"
+            >
+              <img
+                src="assets/images/breathe-interior-main.png"
+                alt="Main seating area at Breathe Coffee Jaipur"
+              /><span><i class="fa-solid fa-expand"></i></span>
+            </button>
+            <button
+              class="gallery-item reveal delay-1"
+              data-full="assets/images/breathe-interior-corner.png"
+            >
+              <img
+                src="assets/images/breathe-interior-corner.png"
+                alt="Plant-filled cafe corner"
+              /><span><i class="fa-solid fa-expand"></i></span>
+            </button>
+            <button
+              class="gallery-item reveal delay-2"
+              data-full="assets/images/breathe-interior-green.png"
+            >
+              <img
+                src="assets/images/breathe-interior-green.png"
+                alt="Calm green seating corner"
+              /><span><i class="fa-solid fa-expand"></i></span>
+            </button>
+            <button
+              class="gallery-item reveal delay-1"
+              data-full="assets/images/fermented-coffee-beverage-brew-1366x768.webp"
+            >
+              <img
+                src="assets/images/fermented-coffee-beverage-brew-1366x768.webp"
+                alt="Warm cafe table"
+              /><span><i class="fa-solid fa-expand"></i></span>
+            </button>
+            <button
+              class="gallery-item reveal delay-2"
+              data-full="assets/images/Hero-mobile-80percent-1534x1227.a16103c4.jpg"
+            >
+              <img
+                src="assets/images/Hero-mobile-80percent-1534x1227.a16103c4.jpg"
+                alt="Bright coffee shop interior"
+              /><span><i class="fa-solid fa-expand"></i></span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div
+        class="lightbox"
+        id="lightbox"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Gallery image preview"
+      >
+        <button id="lightboxClose" aria-label="Close gallery">
+          <i class="fa-solid fa-xmark"></i></button
+        ><img id="lightboxImage" src="" alt="Expanded gallery view" />
+      </div>
+
+      <section class="testimonial-section section" id="testimonials">
+        <div class="container">
+          <div class="section-heading center reveal">
+            <span class="eyebrow">Guest Stories</span>
+            <h2>Loved by our <em>community</em></h2>
+            <div class="rating-pill">
+              <strong>4.6</strong
+              ><span
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star-half-stroke"></i></span
+              ><small>Based on guest ratings</small>
+            </div>
+          </div>
+          <div class="testimonial-slider reveal">
+            <div class="testimonial-track" id="testimonialTrack">
+              <article class="testimonial-card">
+                <div class="review-stars">
+                  ★★★★<span>★</span> <small>4/5</small>
+                </div>
+                <i class="fa-solid fa-quote-left"></i>
+                <p>
+                  “Amazing experience! The ambience is super calm and cozy, the
+                  coffee tasted fresh and rich, and the staff was polite and
+                  friendly. Loved the vibe and music.”
+                </p>
+                <div class="guest">
+                  <span>R</span>
+                  <div>
+                    <strong>Rahul Choudhary</strong><small>Google Review</small>
+                  </div>
+                </div>
+              </article>
+              <article class="testimonial-card">
+                <div class="review-stars">★★★★★ <small>5/5</small></div>
+                <i class="fa-solid fa-quote-left"></i>
+                <p>
+                  “The vibe and ambience are aesthetically done. The atmosphere
+                  felt refreshing, the staff was polite and professional, and
+                  the food was genuinely good.”
+                </p>
+                <div class="guest">
+                  <span>N</span>
+                  <div>
+                    <strong>Nandini Jaiswal</strong><small>Google Review</small>
+                  </div>
+                </div>
+              </article>
+              <article class="testimonial-card">
+                <div class="review-stars">★★★★★ <small>5/5</small></div>
+                <i class="fa-solid fa-quote-left"></i>
+                <p>
+                  “I really enjoyed the food—especially the granola smoothie
+                  bowl and coffee cranberry tonic. I would love to spend every
+                  evening here.”
+                </p>
+                <div class="guest">
+                  <span>B</span>
+                  <div>
+                    <strong>BK Pahadi</strong><small>Google Review</small>
+                  </div>
+                </div>
+              </article>
+              <article class="testimonial-card">
+                <div class="review-stars">★★★★★ <small>5/5</small></div>
+                <i class="fa-solid fa-quote-left"></i>
+                <p>
+                  “Beautiful ambience. We tried a couple of beverages and
+                  everything was very decent.”
+                </p>
+                <div class="guest">
+                  <span>K</span>
+                  <div>
+                    <strong>Kajal Sharma</strong><small>Google Review</small>
+                  </div>
+                </div>
+              </article>
+              <article class="testimonial-card">
+                <div class="review-stars">★★★★★ <small>5/5</small></div>
+                <i class="fa-solid fa-quote-left"></i>
+                <p>“A good, beautiful place for a family outing.”</p>
+                <div class="guest">
+                  <span>S</span>
+                  <div>
+                    <strong>Sangeeta Negi</strong><small>Google Review</small>
+                  </div>
+                </div>
+              </article>
+              <article class="testimonial-card">
+                <div class="review-stars low">★☆☆☆☆ <small>1/5</small></div>
+                <i class="fa-solid fa-quote-left"></i>
+                <p>“Nice ambience and good coffee.”</p>
+                <div class="guest">
+                  <span>D</span>
+                  <div>
+                    <strong>Divakar</strong><small>Google Review</small>
+                  </div>
+                </div>
+              </article>
+              <article class="testimonial-card">
+                <div class="review-stars">
+                  ★★★★<span>★</span> <small>4/5</small>
+                </div>
+                <i class="fa-solid fa-quote-left"></i>
+                <p>
+                  “Amazing experience! The ambience is super calm and cozy, the
+                  coffee tasted fresh and rich, and the staff was polite and
+                  friendly. Loved the vibe and music.”
+                </p>
+                <div class="guest">
+                  <span>R</span>
+                  <div>
+                    <strong>Rahul Choudhary</strong><small>Google Review</small>
+                  </div>
+                </div>
+              </article>
+              <article class="testimonial-card">
+                <div class="review-stars">★★★★★ <small>5/5</small></div>
+                <i class="fa-solid fa-quote-left"></i>
+                <p>
+                  “The vibe and ambience are aesthetically done. The atmosphere
+                  felt refreshing, the staff was polite and professional, and
+                  the food was genuinely good.”
+                </p>
+                <div class="guest">
+                  <span>N</span>
+                  <div>
+                    <strong>Nandini Jaiswal</strong><small>Google Review</small>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="slider-controls">
+              <button id="prevTestimonial" aria-label="Previous review">
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <div class="slider-dots" id="sliderDots"></div>
+              <button id="nextTestimonial" aria-label="Next review">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section section" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-details reveal">
+            <span class="eyebrow light">Visit Breathe.Coffee</span>
+            <h2>Let’s meet over<br /><em>a perfect cup.</em></h2>
+            <p>
+              Reserve a table, plan a celebration or simply ask us what’s
+              brewing today.
+            </p>
+            <div class="contact-list">
+              <a data-map-link href="#" target="_blank" rel="noopener"
+                ><span><i class="fa-solid fa-location-dot"></i></span>
+                <div>
+                  <small>Find Us</small
+                  ><strong
+                    >Breathe Coffee Jaipur, Second Floor, Ridhiraj World
+                    Business Center, Queens Road, Dharam Park, Jaipur, Rajasthan
+                    302021</strong
+                  >
+                </div></a
+              >
+              <a data-phone-link href="#"
+                ><span><i class="fa-solid fa-phone"></i></span>
+                <div>
+                  <small>Call Us</small
+                  ><strong data-phone-text>Phone number to be updated</strong>
+                </div></a
+              >
+              <a data-email-link href="#"
+                ><span><i class="fa-solid fa-envelope"></i></span>
+                <div>
+                  <small>Email Us</small
+                  ><strong data-email-text>Email to be updated</strong>
+                </div></a
+              >
+              <div>
+                <span><i class="fa-solid fa-clock"></i></span>
+                <div>
+                  <small>Opening Hours</small
+                  ><strong>Monday – Sunday: 8:00 AM – 12:00 PM</strong>
+                </div>
+              </div>
+            </div>
+            <div class="socials">
+              <a href="#" aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i></a
+              ><a href="#" aria-label="Facebook"
+                ><i class="fa-brands fa-facebook-f"></i></a
+              ><a href="#" aria-label="YouTube"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-form-wrap reveal delay-1">
+            <span class="form-label">Table Enquiry</span>
+            <h3>Reserve your experience</h3>
+            <form id="whatsappForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name *</label
+                  ><input
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number *</label
+                  ><input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    inputmode="tel"
+                    placeholder="+91 98765 43210"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="date">Visit Date *</label
+                  ><input id="date" name="date" type="date" required />
+                </div>
+                <div class="form-group">
+                  <label for="time">Preferred Time *</label
+                  ><input id="time" name="time" type="time" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="guests">Number of Guests *</label
+                  ><select id="guests" name="guests" required>
+                    <option value="">Select guests</option>
+                    <option>1 Guest</option>
+                    <option>2 Guests</option>
+                    <option>3 Guests</option>
+                    <option>4 Guests</option>
+                    <option>5 Guests</option>
+                    <option>6+ Guests</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="occasion">Occasion</label
+                  ><select id="occasion" name="occasion">
+                    <option>Casual Dining</option>
+                    <option>Birthday</option>
+                    <option>Anniversary</option>
+                    <option>Business Meeting</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Special Request</label
+                ><textarea
+                  id="message"
+                  name="message"
+                  rows="3"
+                  placeholder="Any special request or message..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">
+                <i class="fa-brands fa-whatsapp"></i> Send Enquiry on WhatsApp
+              </button>
+              <p class="form-note">
+                <i class="fa-solid fa-lock"></i> Your details are used only for
+                this booking enquiry.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo light-logo logo-image-link"
+            ><img
+              class="brand-logo footer-logo"
+              src="assets/images/breathe-coffee-logo.png"
+              alt="Breathe Coffee"
+          /></a>
+          <p>
+            Global flavours, handcrafted coffee and a space designed to help you
+            pause, connect and breathe.
+          </p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="#home">Home</a><a href="#about">About Us</a
+          ><a href="#menu">Menu</a><a href="#gallery">Gallery</a>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <a href="#faq">FAQs</a><a href="#testimonials">Reviews</a
+          ><a href="#contact">Book a Table</a
+          ><a data-whatsapp-link href="#">WhatsApp Us</a>
+        </div>
+        <div>
+          <h4>Opening Hours</h4>
+          <p>Monday – Sunday</p>
+          <strong>8:00 AM – 12:00 PM</strong
+          ><small>Call us for reservations and current updates.</small>
         </div>
       </div>
-    </section>
-  </main>
+      <div class="container business-info">
+        <h4>Business Information</h4>
+        <p><strong>Legal Name:</strong> Breathe Hospitality</p>
+        <p><strong>GSTIN:</strong> 08ABGFB8131J1ZC</p>
+        <p><strong>Registered Person:</strong> Sanjay Kumar Verma</p>
+        <p>
+          <strong>Registered Address:</strong> 2nd Floor, Unit No. 2, Khasra No.
+          225, World Business Centre, Ajmer Road, Sushilpura, Jaipur, Rajasthan
+          302019
+        </p>
+      </div>
+      <div class="container footer-bottom">
+        <p>
+          Copyright © <span id="year"></span> Breathe.Coffee – A Unit of
+          <strong>BREATHE HOSPITALITY</strong>. All Rights Reserved.
+        </p>
 
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div class="footer-brand"><a href="#home" class="logo light-logo logo-image-link"><img class="brand-logo footer-logo" src="assets/images/breathe-coffee-logo.png" alt="Breathe Coffee"></a><p>Global flavours, handcrafted coffee and a space designed to help you pause, connect and breathe.</p></div>
-      <div><h4>Explore</h4><a href="#home">Home</a><a href="#about">About Us</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a></div>
-      <div><h4>Quick Links</h4><a href="#faq">FAQs</a><a href="#testimonials">Reviews</a><a href="#contact">Book a Table</a><a data-whatsapp-link href="#">WhatsApp Us</a></div>
-      <div><h4>Opening Hours</h4><p>Monday – Sunday</p><strong>8:00 AM – 12:00 PM</strong><small>Call us for reservations and current updates.</small></div>
+        <p>
+          Designed and Developed by
+          <a
+            href="https://agilesolutions.co.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="developer-link"
+          >
+            Agile Solutions Pvt Ltd
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    <div class="floating-actions">
+      <a
+        data-phone-link
+        href="#"
+        class="float-btn float-call"
+        aria-label="Call now"
+        ><i class="fa-solid fa-phone"></i><span>Call</span></a
+      >
+      <a
+        data-whatsapp-link
+        href="#"
+        class="float-btn float-whatsapp"
+        aria-label="Chat on WhatsApp"
+        ><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a
+      >
     </div>
-    <div class="container business-info">
-      <h4>Business Information</h4>
-      <p><strong>Legal Name:</strong> Breathe Hospitality</p>
-      <p><strong>GSTIN:</strong> 08ABGFB8131J1ZC</p>
-      <p><strong>Registered Person:</strong> Sanjay Kumar Verma</p>
-      <p><strong>Registered Address:</strong> 2nd Floor, Unit No. 2, Khasra No. 225, World Business Centre, Ajmer Road, Sushilpura, Jaipur, Rajasthan 302019</p>
-    </div>
-<div class="container footer-bottom">
-  <p>
-    Copyright © <span id="year"></span> Breathe.Coffee – A Unit of
-    <strong>BREATHE HOSPITALITY</strong>. All Rights Reserved.
-  </p>
+    <button class="back-top" id="backTop" aria-label="Back to top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
 
-  <p>
-    Designed and Developed by
-    <a
-      href="https://agilesolutions.co.in/"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="developer-link"
-    >
-      Agile Solutions Pvt Ltd
-    </a>
-  </p>
-</div>
-</footer>
-
-  <div class="floating-actions">
-    <a data-phone-link href="#" class="float-btn float-call" aria-label="Call now"><i class="fa-solid fa-phone"></i><span>Call</span></a>
-    <a data-whatsapp-link href="#" class="float-btn float-whatsapp" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
-  </div>
-  <button class="back-top" id="backTop" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
-
-  <script src="js/script.js"></script>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>

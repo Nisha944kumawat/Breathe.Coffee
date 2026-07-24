@@ -2,9 +2,9 @@
 
 /* UPDATE THESE DETAILS BEFORE PUBLISHING */
 const CAFE = {
-  phone: "+9199928060497",
-  phoneDisplay: "+91 99928 060497",
-  whatsapp: "9199928060497",
+  phone: "+919928060497",
+  phoneDisplay: "+91 99280 60497",
+  whatsapp: "919928060497",
   email: "Breathecoffee012@gmail.com",
   map: "https://maps.app.goo.gl/9Lmezxs7jw6hjBDj7"
 };
